@@ -275,3 +275,6 @@ body{
   right:10px;
   top: calc(50% - 22px);
 }
+.wrap {
+  padding-bottom: calc(64px + env(safe-area-inset-bottom));
+}
