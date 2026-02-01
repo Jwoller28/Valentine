@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>For Camila 🤍</title>
+  <meta name="theme-color" content="#f6d6de" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <section class="card hero">
+      <div class="pill">Camila 🤍</div>
+      <h1>My love,</h1>
+
+      <p class="lead">
+        You are the light in my life that brings all good things to me —
+        the calm in my storms, the love in my darkest hours.
+      </p>
+
+      <p class="sublead">
+        I wanted to ask you in a way that feels like us: simple, real, and full of love.
+      </p>
+    </section>
+
+    <section class="card song">
+      <div class="sectionTitle">Our song</div>
+      <p class="muted">
+        Tap below when you’re ready 🤍
+      </p>
+
+      <button id="revealSongBtn" class="softBtn" type="button">
+        Tap to play “Can’t Help Falling in Love” 🎶
+      </button>
+
+      <div id="songFrameWrap" class="songFrameWrap" hidden>
+        <!-- YouTube embed injected by JS -->
+      </div>
+      <p class="tiny muted">
+        (iPhone won’t autoplay — this is on purpose. Love deserves a tap.)
+      </p>
+    </section>
+
+    <section class="card reasons">
+      <div class="sectionTitle">Reasons I adore you</div>
+      <ul class="reasonList">
+        <li>You feel like home — safe, warm, and real.</li>
+        <li>You bring peace to my chaos and softness to my hard days.</li>
+        <li>Your love makes everything in my life better.</li>
+        <li>You inspire me to be better, without ever asking me to be anyone else.</li>
+        <li>With you, even normal moments feel special.</li>
+      </ul>
+      <p class="muted tiny">
+        (And yes… I have about a million more.)
+      </p>
+    </section>
+
+    <section class="card gallery">
+      <div class="sectionTitle">Us 🤍</div>
+      <p class="muted">Tap any photo.</p>
+
+      <div id="photoGrid" class="photoGrid" aria-label="Photo gallery"></div>
+    </section>
+
+    <section class="card ask">
+      <div class="sectionTitle">One question</div>
+      <h2>Will you be my Valentine?</h2>
+
+      <div class="buttons">
+        <button id="yesBtn" class="btn yes" type="button">Yes 💘</button>
+        <button id="noBtn" class="btn no" type="button">No 🙈</button>
+      </div>
+
+      <p id="message" class="message" aria-live="polite"></p>
+
+      <div class="signature">
+        Forever yours,<br />
+        <span class="sigName">Jordan</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightboxInner" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <button id="lbClose" class="lbIcon" type="button" aria-label="Close">✕</button>
+      <button id="lbPrev" class="lbIcon left" type="button" aria-label="Previous">‹</button>
+
+      <figure class="lbFigure">
+        <img id="lbImg" alt="Expanded photo" />
+        <figcaption id="lbCaption" class="lbCaption"></figcaption>
+      </figure>
+
+      <button id="lbNext" class="lbIcon right" type="button" aria-label="Next">›</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
